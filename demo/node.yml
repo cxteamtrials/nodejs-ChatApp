@@ -22,7 +22,7 @@
         chdir: /app
       ignore_errors: yes
     - name: Start App
-      shell: npm start
+      shell: nohup npm start &
       args:
         chdir: /app
       ignore_errors: yes

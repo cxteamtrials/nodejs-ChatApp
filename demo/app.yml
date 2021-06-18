@@ -8,6 +8,11 @@
   roles:
   - nodejs
   tasks:
+    - name: install jq
+      yum:
+        name: jq
+        state: latest
+    
     - name: create app directory
       file:
         path: /app

@@ -20,7 +20,9 @@
       shell: npm install
       args:
         chdir: /app
+      ignore_errors: yes
     - name: Start App
       shell: npm start
       args:
         chdir: /app
+      ignore_errors: yes

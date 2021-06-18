@@ -8,6 +8,10 @@
   roles:
   - nodejs
   tasks:
+    - name: install nohub
+      yum:
+        name: coreutils
+        state: latest
     - name: create app directory
       file:
         path: /app
@@ -22,7 +26,7 @@
         chdir: /app
       ignore_errors: yes
     - name: Start App
-      shell: nohup npm start &
+      shell: nohub npm start &
       args:
         chdir: /app
       ignore_errors: yes

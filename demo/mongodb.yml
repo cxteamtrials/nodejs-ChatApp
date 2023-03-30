@@ -1,7 +1,7 @@
 - name: install
 - hosts: all
   roles:
-  - mongo
+  - mongodb
   tasks:
     - name: stop firewalld
       systemd:

@@ -1,9 +1,4 @@
 - hosts: all
   roles:
     - mongodb
-  tasks:
-    - name: stop firewalld
-      systemd:
-        name: firewalld
-        state: stopped
-        enabled: no
+

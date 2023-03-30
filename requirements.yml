@@ -1,5 +1,5 @@
 - src: https://github.com/cxteamtrials/mongodb-ansible.git
-  name: mongodb
+  name: mongo
   
 - src: https://github.com/geerlingguy/ansible-role-nodejs.git
   name: nodejs

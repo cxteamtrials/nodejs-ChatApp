@@ -5,7 +5,6 @@
   apt: 
     name: mongodb
     state: present
-    sudo: True
     update_cache: yes
 
 - name: copy config file

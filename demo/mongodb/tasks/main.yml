@@ -2,6 +2,7 @@
 # tasks file for mongoDB setup
 
 - name: install mongoDB
+  sudo: True
   apt: 
     name: mongodb
     state: present
